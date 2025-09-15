@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bloco de Notas Rápido</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header>
+      <h2>📝 Bloco de Notas Rápido</h2>
+      <p>Capture ideias e lembretes instantaneamente!</p>
+    </header>
+    <main>
+      <label for="note-area">Seu lembrete:</label>
+      <textarea
+        id="note-area"
+        rows="8"
+        cols="32"
+        placeholder="Digite seu lembrete ou ideia..."
+        aria-label="Área de texto para lembrete"
+        tabindex="1"
+      ></textarea>
+      <div class="actions">
+        <button id="save-button" type="button" tabindex="2">💾 Salvar</button>
+        <button id="clear-button" type="button" tabindex="3">🧹 Limpar</button>
+      </div>
+      <div id="char-count"></div>
+      <p id="status-message" aria-live="polite"></p>
+    </main>
+    <footer>
+      <small>Extensão por Becker &copy; 2024</small>
+    </footer>
+    <script src="popup.js"></script>
+  </body>
+</html>
